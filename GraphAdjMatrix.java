@@ -40,7 +40,7 @@ public class GraphAdjMatrix implements Graph{
 		while(!s.empty()) {
 			
 			int v = s.pop();
-			System.out.println(v);				//Check sorting here.
+			//System.out.println(v);				//Check sorting here.
 			visited[v] = true;
 
 			for(int i = 0; i < neighbors(v).length; i++) {
