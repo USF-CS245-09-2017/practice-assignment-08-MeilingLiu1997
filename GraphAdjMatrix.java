@@ -1,3 +1,4 @@
+package cs245.PA08;
 
 import java.util.Stack;
 
@@ -39,10 +40,13 @@ public class GraphAdjMatrix implements Graph{
 		while(!s.empty()) {
 			
 			int v = s.pop();
-			//System.out.println(v);				//Check sorting here.
+			System.out.println(v);				//Check sorting here.
 			visited[v] = true;
-						
-			for(int n = 0; n < neighbors(v).length; n++) {
+
+			for(int i = 0; i < neighbors(v).length; i++) {
+				
+				int n = neighbors(v)[i];
+
 				if(!visited[n]) {
 					s.push(new Integer(n));
 					visited[n] = true;
